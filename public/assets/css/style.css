@@ -2287,6 +2287,12 @@ ul {
     margin-top: 20px;
     padding: 0 45px;
     letter-spacing: 0.5px; }
+    .location-adjust{
+      margin-bottom: 0.7rem!important;
+    }
+    .margin-adjust {
+      margin-top: 11rem !important;
+    }
     .contact-form-wrap button_1 {
       margin-top: 90px;
       padding: 0 45px;

@@ -44,20 +44,21 @@
                         </div>
 
                         <div class="rld-single-select">
-                            <select class="select single-select" name="location">
-                              <option> Preferred Location </option>
+                            <select class="select single-select location-adjust" name="location">
+                              <option value=""> Preferred Location </option>
                               <option value="ibadan">Ibadan</option>
                               <option value="ifo ogun state">Ifo Ogun State</option>
                               <option value="waterman ogun state">Waterman Ogun State</option>
                               <option value="iseyin oyo state">Iseyin Oyo State</option>
                           </select>
                         </div>
-                        <div class="form-control">
+
+                        <div class="rld-single-input">
                             {!! NoCaptcha::renderJs() !!}
                             {!! NoCaptcha::display( ) !!}
                         </div>
-                            
-                        <div class="btn-wrap">
+                        
+                        <div class="btn-wrap margin-adjust">
                             <button class="btn btn-yellow"> APPLY </button>
                         </div>
                     </form>
