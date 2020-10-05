@@ -52,10 +52,10 @@
                               <option value="iseyin oyo state">Iseyin Oyo State</option>
                           </select>
                         </div>
-
+                        <div class="form-control">
                             {!! NoCaptcha::renderJs() !!}
                             {!! NoCaptcha::display( ) !!}
-
+                        </div>
                             
                         <div class="btn-wrap">
                             <button class="btn btn-yellow"> APPLY </button>
