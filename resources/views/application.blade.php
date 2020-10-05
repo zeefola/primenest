@@ -33,6 +33,7 @@
                             </select>
                         </div>
 
+
                         <div class="rld-single-select">
                             
                             <select class="select single-select" name="payment_option">
@@ -53,10 +54,8 @@
                           </select>
                         </div>
 
-                        <div class="rld-single-input">
                             {!! NoCaptcha::renderJs() !!}
                             {!! NoCaptcha::display( ) !!}
-                        </div>
                         
                         <div class="btn-wrap margin-adjust">
                             <button class="btn btn-yellow"> APPLY </button>
