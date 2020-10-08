@@ -12,7 +12,7 @@ class ContactController extends Controller
 {
     public function fetch(){
 
-        $datas = Contact::all();
+        $datas = Contact::latest()->get();
         $locations = Location::all()->pluck('name')->toArray();
         /** Return a json response object */
 

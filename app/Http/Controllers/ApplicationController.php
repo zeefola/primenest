@@ -12,7 +12,7 @@ class ApplicationController extends Controller
     public function fetch(){
         /** Fetch data into $data */
 
-        $data = application_history::all();
+        $data = application_history::latest()->get();
 
         /** Return a json response object with  $data */
         return response()->json(['message' => $data]);

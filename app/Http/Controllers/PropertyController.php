@@ -15,7 +15,7 @@ class PropertyController extends Controller
         if(request()->id){
             $datas = Property::where('id',request()->id)->get();
         }else{
-            $datas = Property::all();
+            $datas = Property::latest()->get();
         }
        
         /** Creates a collection instance */
