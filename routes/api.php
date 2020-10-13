@@ -22,27 +22,27 @@ Route::group([
  'prefix' => 'v1'
 ], function ($router){
 
-    Route::any('/property_fetch' , 'PropertyController@fetch');
-    Route::any('/property_create' , 'PropertyController@create');
-    Route::any('/property_update' , 'PropertyController@update');
-    Route::any('/property_delete' , 'PropertyController@delete');
+    Route::post('/property_fetch' , 'PropertyController@fetch');
+    Route::post('/property_create' , 'PropertyController@create');
+    Route::post('/property_update' , 'PropertyController@update');
+    Route::post('/property_delete' , 'PropertyController@delete');
 
 
-    Route::any('/faq_fetch' , 'FaqController@fetch');
-    Route::any('/faq_create' , 'FaqController@create');
-    Route::any('/faq_update' , 'FaqController@update');
-    Route::any('/faq_delete' , 'FaqController@delete');
-    Route::any('/faq_export' , 'FaqController@exportable');
+    Route::post('/faq_fetch' , 'FaqController@fetch');
+    Route::post('/faq_create' , 'FaqController@create');
+    Route::post('/faq_update' , 'FaqController@update');
+    Route::post('/faq_delete' , 'FaqController@delete');
+    Route::post('/faq_export' , 'FaqController@exportable');
 
-    Route::any('/contact_fetch' , 'ContactController@fetch');
-    Route::any('/contact_update' , 'ContactController@update');
-    Route::any('/contact_delete' , 'ContactController@delete');
-    Route::any('/contact_export' , 'ContactController@exportable');
+    Route::post('/contact_fetch' , 'ContactController@fetch');
+    Route::post('/contact_update' , 'ContactController@update');
+    Route::post('/contact_delete' , 'ContactController@delete');
+    Route::post('/contact_export' , 'ContactController@exportable');
 
-    Route::any('/application_fetch' , 'ApplicationController@fetch');
-    Route::any('/application_update' , 'ApplicationController@update');
-    Route::any('/application_delete' , 'ApplicationController@delete');
-    Route::any('/application_export' , 'ApplicationController@exportable');
+    Route::post('/application_fetch' , 'ApplicationController@fetch');
+    Route::post('/application_update' , 'ApplicationController@update');
+    Route::post('/application_delete' , 'ApplicationController@delete');
+    Route::post('/application_export' , 'ApplicationController@exportable');
 
 
 });

@@ -9,6 +9,12 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class ApplicationController extends Controller
 {
+   
+    public function __construct()
+    {
+        $this->middleware('auth.apikey');
+    }
+   
     public function fetch(){
         /** Fetch data into $data */
 
