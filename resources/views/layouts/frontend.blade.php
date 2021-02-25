@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="{{  config('app.name') }}">
     <meta name="language" content="English">
-    
+
     {!! SEO::generate() !!}
 
     <!-- favicon -->
@@ -57,6 +57,7 @@
         <li itemprop="name"><a itemprop="url" href="/property">Properties</a></li>
         <li itemprop="name"><a itemprop="url" href="/faq">FAQ</a></li>
         <li itemprop="name"><a itemprop="url" href="/contact-us">Contact Us</a></li>
+        <li itemprop="name"><a itemprop="url" href="https://www.blog.primenest.ng/" target="_blank">Blog</a></li>
         <li itemprop="name" style="display:none"><a itemprop="url" href="/application">Application Form</a></li>
     </ul>
     @endsection
@@ -72,7 +73,7 @@
     <!-- Service area start -->
 
     @yield("main_content")
-    
+
     <!-- Service area End -->
 
     <!-- footer area start -->
@@ -86,7 +87,7 @@
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
     </div>
     <!-- back to top area end -->
-     
+
     <!--  chat plugin  -->
     @includeIf("layouts.tawk" )
     <!-- all plugins here -->
